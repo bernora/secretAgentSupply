@@ -1,20 +1,117 @@
+
+
+/*General styling across page*/
+
+body {
+  font-family: Arial;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+}
+
+.white {
+  background-color: white;
+  color: black;
+}
+
+.black {
+  background-color: black;
+  color: white;
+}
+
 .row {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .column {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content:flex-end;
 }
 
-.header {
-  background-color: black;
-  justify-content: flex-start;
-  color: white;
-  
+.max-width-container {
+  width: 75%;
+  margin: 0 auto;
 }
+
+
+/*Header with logo styling*/
+
+.header {
+  text-transform: uppercase;
+  justify-content: flex-start;
+  height: 5rem;
+}
+
+.header img {
+  width: 5%;
+  padding: 0 2rem;
+}
+
+
+/*Hero container styling*/
+
+.hero {
+  height: 25rem;
+  justify-content: flex-start;
+  background-image: url("../moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-copyContainer {
+  width: 37%;
+  padding: 3rem;
+  background-color: black;
+  text-transform: uppercase;
+}
+
+.hero-copyContainer h1 {
+  font-size: 2rem;
+  padding-top: 0.5rem;
+  font-weight: bold;
+}
+
+
+/* Nav bar styling*/
+
+nav {
+  background-color: #B00024;
+}
+
+.navBar {
+  height: 4rem;
+}
+
+
+/* Promoted categories styling*/
+
+.promotedItemContainer {
+  padding: 3em;
+}
+
+.promotedItem {
+  max-width: 16rem;
+  height: 16rem;
+  border: 3px solid black;
+  overflow: hidden;
+}
+
+.promotedItem img {
+  max-width: 50%;
+  padding: 10%;
+  margin: auto 0;
+}
+
+.promotedItem h3 {
+  width: 100%;
+  text-align: center;
+  padding: 0.8em 0;
+}
+
+/*

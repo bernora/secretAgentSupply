@@ -26,16 +26,42 @@ body {
   justify-content: space-between;
 }
 
+.row--right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 .column {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content:flex-end;
+  justify-content: space-between;
 }
 
 .max-width-container {
   width: 75%;
   margin: 0 auto;
+}
+
+.full-page-container {
+  width: 100%;
+}
+
+.thirdTitle--center {
+  width: 100%;
+  text-align: center;
+  padding: 0.8rem 0;
+}
+
+.thirdTitle {
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+}
+
+.half-width-container {
+  width: 50%;
 }
 
 
@@ -48,7 +74,7 @@ body {
 }
 
 .header img {
-  width: 5%;
+  width: 14%;
   padding: 0 2rem;
 }
 
@@ -65,7 +91,7 @@ body {
 }
 
 .hero-copyContainer {
-  width: 37%;
+  width: 45%;
   padding: 3rem;
   background-color: black;
   text-transform: uppercase;
@@ -73,6 +99,7 @@ body {
 
 .hero-copyContainer h1 {
   font-size: 2rem;
+  line-height: 2.5rem;
   padding-top: 0.5rem;
   font-weight: bold;
 }
@@ -92,26 +119,47 @@ nav {
 /* Promoted categories styling*/
 
 .promotedItemContainer {
-  padding: 3em;
+  padding: 5rem 0;
+  justify-content: space-between;
 }
 
 .promotedItem {
   max-width: 16rem;
   height: 16rem;
   border: 3px solid black;
-  overflow: hidden;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .promotedItem img {
-  max-width: 50%;
+  width: 60%;
+  height: auto;
   padding: 10%;
   margin: auto 0;
 }
 
-.promotedItem h3 {
-  width: 100%;
-  text-align: center;
-  padding: 0.8em 0;
+/* Contact information styling */
+
+.contactInfo {
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
-/*
+.contact-item {
+  width: 30%;
+  margin-right: 10rem;
+  padding: 2rem 0;
+
+}
+
+.contact-item p {
+  padding: 2rem 0.5rem;
+  text-align: left;
+}
+
+
+/* Footer styling */
+
+footer p {
+  padding: 5rem 0;
+}

@@ -162,7 +162,7 @@ footer p {
 }
 
 
-/*Media query for tablets */
+/* Media query for tablets */
 
 @media (max-width: 1024px) {
   #glasses {
@@ -185,5 +185,67 @@ footer p {
   .promotedItem, .contactItem {
     width: 45%;
   }
+
+ .contactItem {
+   height: 5rem;
+ }
+
+}
+
+
+/* Media query for mobiles */
+
+@media (max-width: 470px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  .header {
+    margin: 0 auto;
+    font-size: 0.75rem;
+  }
+
+  .header img {
+    padding: 0.66rem 0.66rem 0.66rem 0;
+  }
+
+  #glasses, #watch {
+    display: none;
+  }
+
+  .promotedItem, .contactItem {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contactInfo {
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+  }
+
+  .contactItem {
+    padding: 1rem 0;
+  }
+
+  .hero-copyContainer {
+    padding: 1rem;
+  }
+
+  .hero-copyContainer h1 {
+    font-size: 1.75rem;
+    line-height: normal;
+  }
+
+  .hero-copyContainer h2 {
+    font-size: 1rem;
+  }
+
+
+  footer p {
+    margin: 0 auto;
+  }
+
 
 }

@@ -26,13 +26,6 @@ body {
   justify-content: space-between;
 }
 
-.row--right {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-}
-
 .row--top {
   display: flex;
   flex-direction: row;
@@ -99,7 +92,7 @@ body {
 }
 
 .hero-copyContainer {
-  width: 25rem;
+  max-width: 25rem;
   padding: 2rem 3rem;
   background-color: black;
   text-transform: uppercase;
@@ -128,7 +121,6 @@ nav {
 
 .promotedItemContainer {
   padding: 3rem 0;
-  justify-content: space-between;
 }
 
 .promotedItem {
@@ -149,17 +141,12 @@ nav {
   margin: auto 0;
 }
 
-/* Contact information styling */
 
-.contactInfo {
-  justify-content: space-between;
-  align-items: center;
-}
+/* Contact information styling */
 
 .contactItem {
   width: 35%;
   padding: 3rem 0 4rem 0;
-
 }
 
 .contactItem p {
@@ -172,4 +159,31 @@ nav {
 
 footer p {
   padding: 2rem 0;
+}
+
+
+/*Media query for tablets */
+
+@media (max-width: 1024px) {
+  #glasses {
+    display: none;
+  }
+
+  .navBar span {
+    display: none;
+  }
+
+  .navBar:after {
+    content:"Menu";
+    margin: 0 auto;
+  }
+
+  body {
+    font-size: 19px;
+  }
+
+  .promotedItem, .contactItem {
+    width: 45%;
+  }
+
 }
